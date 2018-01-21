@@ -14,14 +14,18 @@
 
 
 ## 用户数据结构
+```
 {
     "name":name,
     "password":password,
     "total_size":size,
     "used_size":size,
 }
+```
 
 ## 项目目录结构
+
+### 客户端
 ```
 ftp_client                    # 客户端
     bin
@@ -32,7 +36,9 @@ ftp_client                    # 客户端
     conf                      #配置文件，暂时为空
     log                       # 日志文件，暂时为空
 
-
+```
+### 服务器端
+```
 ftp_server                    # 服务器
     bin
         main.py               # 程序执行入口
@@ -50,3 +56,8 @@ ftp_server                    # 服务器
         ...
     log                       # 日志文件夹，暂时没使用
 ```
+
+##  程序启动入口
+服务器端：ftp_server/bin/main.py
+
+客户端：ftp_server/bin/main.py
